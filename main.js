@@ -8,3 +8,18 @@
 // i 16 numeri vietati/mina, devono essere tutti diversi, non possono esserci doppioni;
 // l’utente non può inserire due volte lo stesso numero, ma sempre numeri diversi.
 
+
+for (i = 0; i < 16; i++) {
+        var cpuNum = getRandomIntInclusive (1,100);
+        console.log(cpuNum);
+}
+
+//BLOCCO FUNZIONI
+
+//funzione che genera un numero casuale compreso fra un min e max che imposto come argomento quando la invoco
+function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
